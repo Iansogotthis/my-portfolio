@@ -23,7 +23,7 @@ function Contact() {
   return (
     <Container maxWidth="sm" style={{ paddingTop: '50px' }}>
       <Typography variant="h4" gutterBottom>
-        Contact Us
+        Contact Me
       </Typography>
       <form onSubmit={formik.handleSubmit}>
         <TextField

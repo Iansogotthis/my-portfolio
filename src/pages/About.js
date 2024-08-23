@@ -8,7 +8,7 @@ function About() {
         About Me
       </Typography>
       <Typography variant="body1">
-        I am a passionate developer with experience in creating high-quality web applications.
+        I am a passionate developer with experience in creating high-quality web applications. My journey in coding started several years ago, and I have since honed my skills in various programming languages and frameworks. I am committed to continuous learning and improvement.
       </Typography>
     </Container>
   );
