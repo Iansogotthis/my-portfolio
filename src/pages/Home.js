@@ -1,7 +1,7 @@
 import React from 'react';
     import { Container, Typography, Button } from '@mui/material';
     import { motion } from 'framer-motion';
-
+    import StyledButton from '../components/Button';
     function Home() {
       return (
         <motion.div
@@ -9,17 +9,19 @@ import React from 'react';
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
         >
-          <Container maxWidth="md" style={{ textAlign: 'center', paddingTop: '50px' }}>
-            <Typography variant="h2" gutterBottom>
-              Welcome to My Portfolio
-            </Typography>
-            <Typography variant="body1">
-              Discover my projects and learn more about me.
-            </Typography>
-            <Button variant="contained" color="primary" style={{ marginTop: '20px' }} href="/projects">
-              View My Work
-            </Button>
-          </Container>
+        <Container maxWidth="md" style={{ textAlign: 'center', paddingTop: '50px' }}>
+      <Typography variant="h2" gutterBottom>
+        Welcome to My Portfolio
+      </Typography>
+      <Typography variant="body1">
+        Discover my projects and learn more about me.
+      </Typography>
+      <InteractiveButton style={{ marginTop: '20px' }} onClick={() => alert('Button Clicked!')}>
+        View My Work
+      </InteractiveButton>
+    </Container>
+
+
         </motion.div>
       );
     }
